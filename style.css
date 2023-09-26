@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+--Tomato: hsl(4, 100%, 67%);
+--gradient-pink: #ff3e83;
+  --gradient-orange: #fd634a;
+  --gradient-shadow: #ff3e8355;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--Dark-Slate-Grey);
+}
+
+main .container{
+    border-radius: 20px;
+    background: var(--White);
+    width: 150vh;
+    display: flex;
+    margin: 10px auto;
+    padding: 20px 20px;
+    color: var(--Grey);
+
+}
+.left-side{
+    width: 100vh;
+    padding: 30px 50px;
+}
+.left-side h1{
+    font-size: 60px;
+    color: var(--Dark-Slate-Grey);
+    margin: 25px 0;
+}
+
+.font-icons{
+    font-size: 16px;
+    margin: 30px 0;
+
+}
+
+.iconwithlist{
+    display: flex;
+    
+}
+.iconwithlist p{
+    margin: 10px 0;
+    margin-left: 15px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+}
+.forms .titles{
+    display: flex;
+    justify-content: space-between;
+}
+.forms label{
+    color: var(--Dark-Slate-Grey);
+}
+.forms input{
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 15px 15px;
+    border: 1px solid var(--Charcoal-Grey);
+}
+
+.forms button{
+  background: var(--Dark-Slate-Grey);
+  color: var(--White);
+  padding: 15px 15px;  
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.forms button:hover{
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        90deg,
+        var(--gradient-pink),
+        var(--gradient-orange)
+    );
+    box-shadow: 0 1rem 1.5rem var(--gradient-shadow);
+}
+
+.successMessage{
+    background: var(--White);
+    width: 510px;
+    margin: 20px auto;
+    border-radius: 20px;
+    text-align: left;
+    padding: 25px 55px;
+    height: 523px;
+}
+.successMessage img{
+   padding: 20px;
+   width: 105px;
+}
+
+.successMessage h1{
+    font-size: 10vh;
+    font-weight: bold;
+    color: var(--Dark-Slate-Grey);
+   
+}
+
+.successMessage p{
+    font-size: 16px;
+    color: var(--Charcoal-Grey);
+    margin: 30px 0;
+}
+.successMessage button{
+    background: var(--Dark-Slate-Grey);
+    color: var(--White);
+    border-radius: 5px;
+    padding: 20px 15px;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.successMessage button:hover{
+    background: linear-gradient(
+        90deg,
+        var(--gradient-pink),
+        var(--gradient-orange)
+    );
+    box-shadow: 0 1rem 1.5rem var(--gradient-shadow);
+
+}
+
+
+@media screen and (max-width: 375px) {
+   main .container{
+       width: 375px;
+       display: flex;
+
+    }
+    .right-side img{
+        content: url(./assets/images/illustration-sign-up-mobile.svg);
+        margin-left: -82vh;
+        margin-top: -5vh;
+    }
+    .left-side{
+        margin-top: 59vh;
+    }
+    .left-side h1{
+        font-size: 32px;
+        width: 100%;
+    }
+   
+}
+
+.footers{
+    text-align: center;
+    color: var(--White);
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color:var(--White); }

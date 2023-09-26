@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Sign-up form with success message</title>
+
+  <link rel="stylesheet" href="./style.css">
+  
+
+  <style>
+    
+  </style>
+</head>
+<body>
+
+
+  <main>
+    <div class="container" id="container" >
+
+      <div class="left-side">
+        <h1>  Stay updated!</h1>
+    
+    
+     <p> Join 60,000+ product managers receiving monthly updates on:</p>
+    
+    <div class="font-icons">
+      <div class="iconwithlist">
+        <img src="./assets/images/icon-list.svg" alt="List icons">
+       <p>  Product discovery and building what matters</p>
+      </div>
+      <div class="iconwithlist">
+        <img src="./assets/images/icon-list.svg" alt="List icons">
+      <p>  Measuring to ensure updates are a success </p>
+      </div>
+      
+     <div class="iconwithlist">
+      <img src="./assets/images/icon-list.svg" alt="List icons">
+      <p>And much more!</p>
+     </div>
+    </div>
+    
+    <form id="form" class="forms" onsubmit="submit">
+    <div class="titles">
+
+      <div>  <label for="email">Email address</label></div>  <div id="show-error"></div>
+
+    </div>
+     <input type="email" id="email" placeholder="email@company.com">    
+     <button class="submitButton" type="submit" id="submit" > Subscribe to monthly newsletter</button>
+    </form>
+      </div>
+    
+      <!-- Sign-up form end -->
+    
+    
+      <div class="right-side">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up-form">
+      </div>
+    
+  </main>
+
+  <!-- Success message start -->
+
+  <section >
+    <div id="successMessage" class="successMessage" style="display: none">
+  
+      <img src="./assets/images/icon-list.svg" alt="List icons">
+
+     
+        <h1>  Thanks for subscribing!</h1>
+    
+    <p>  A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+      Please open it and click the button inside to confirm your subscription.</p>
+    
+     <button id="dismiss"> Dismiss message</button>
+      
+    </div>
+  </section>
+
+
+  <!-- Success message end -->
+
+  <footer class="footers">
+    <span class="attribution"
+    >Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >
+  </span>
+  <span class="boxv">&boxv;</span>
+      <span class="attribution"
+        >Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/Muktadirnayem66"
+          target="_blank"
+          >Muktadirnayem66</a
+        >
+      </span>
+  </footer>
+
+
+<script src="./Script.js"></script>
+</body>
+</html>
